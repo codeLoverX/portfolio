@@ -15,10 +15,10 @@ import { SiGraphql, SiNestjs, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
 export default function Intro() {
   return (
-    <div className='my-0 flex h-screen w-screen items-center justify-evenly py-0'>
+    <div className='my-0 flex min-h-screen w-screen items-center justify-evenly py-0'>
       <div className='w-full'>
-        <div className='container mx-auto grid w-9/12 grid-cols-3 text-center lg:w-10/12 lg:text-start xl:w-7/12'>
-          <div className='order-2 col-span-3 lg:order-1 lg:col-span-2 lg:pr-12'>
+        <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-10/12 lg:text-start xl:w-7/12'>
+          <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>
             <h1 className='pt-12 text-6xl font-bold lg:pt-0'>
               Software engineer
               <MdOutlineWavingHand className='ml-2 inline fill-blue-600' />
@@ -50,7 +50,7 @@ export default function Intro() {
         <div className='my-12 lg:my-0'>
           <div className='container mx-auto w-9/12 pt-6 text-center text-lg lg:w-10/12 lg:pt-0 lg:text-start xl:w-7/12'>
             <div className='pt-0 lg:pt-6'>
-              <p className='align-center mx-auto mb-2 w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
+              <p className='align-center mx-auto mb-2 hidden w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
                 Frontend
               </p>
               <p className='align-center mr-0 mb-2 border-r-black pb-2 pr-0 lg:mr-4 lg:inline lg:border-r-2 lg:pr-12'>
@@ -67,7 +67,7 @@ export default function Intro() {
               </p>
             </div>
             <div className='pt-0 lg:pt-6'>
-              <p className='align-center mx-auto mb-2 w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
+              <p className='align-center mx-auto mb-2 hidden w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
                 Backend
               </p>
               <p className='align-center mr-0 mb-2 border-r-black pb-2 pr-0 lg:mr-4 lg:inline lg:border-r-2 lg:pr-12'>

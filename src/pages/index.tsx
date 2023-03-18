@@ -1,3 +1,4 @@
+import About from '@/components/hero/about';
 import Intro from '@/components/hero/intro';
 import Layout from '@/components/layout/Layout';
 // import ArrowLink from '@/components/links/ArrowLink';
@@ -26,6 +27,7 @@ export default function HomePage() {
       <main>
         <section>
           <Intro />
+          <About />
         </section>
       </main>
     </Layout>

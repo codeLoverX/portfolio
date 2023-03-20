@@ -21,13 +21,7 @@ export default defineType({
     defineField({
       name: 'bio',
       title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-        },
-      ],
+      type: 'string',
     }),
     defineField({
       name: 'about',

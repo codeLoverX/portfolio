@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { PortableText } from '@portabletext/react';
 import Image from 'next/image';
 import {
   FaCss3Alt,
@@ -11,8 +10,8 @@ import {
   FaReact,
   FaSass,
 } from 'react-icons/fa';
-import { MdOutlineWavingHand } from 'react-icons/md';
 import { SiGraphql, SiNestjs, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { Typewriter } from 'react-simple-typewriter'
 
 import { urlFor } from '@/client/imageClient';
 
@@ -22,16 +21,26 @@ import { Main } from '@/types/main';
 export default function Intro({ main }: { main: Main }) {
   console.log({ main });
   return (
-    <div className='my-0 flex min-h-screen w-screen items-center justify-center pt-0 pb-12 lg:pb-0'>
+    <div className='my-0 flex min-h-screen w-screen items-center justify-center pt-0 pb-12 lg:pb-0 bg-gradient-to-b from-white via-slate-100 to-white-100'>
       <div className='w-full'>
         <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-10/12 lg:text-start xl:w-7/12'>
           <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>
             <h1 className='pt-12 text-6xl font-bold lg:pt-0'>
               {main.name}
-              <MdOutlineWavingHand className='ml-2 inline fill-blue-600' />
             </h1>
             <div className='pt-12 text-lg font-light text-gray-600'>
-              <PortableText value={main.bio as any} />
+              <Typewriter
+                words={[main.bio]}
+                loop={5}
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              // onLoopDone={handleDone}
+              // onType={handleType}
+              />
+
             </div>
             <p className='pt-6'>
               <FaLinkedin className='inline text-4xl hover:fill-blue-600' onClick={() => window.open(`${main.socials.linkedin}`)} />
@@ -39,14 +48,14 @@ export default function Intro({ main }: { main: Main }) {
             </p>
           </div>
           <div className='order-1 col-span-3 lg:order-2 lg:col-span-1'>
-            <div className='avatar pt-12 lg:pt-0'>
-              <div className='mask mask-squircle w-72'>
+            <div className='avatar pt-12 lg:pt-0 '>
+              <div className='animated-changeShape ring ring-black ring-offset-base-100 ring-offset-2 w-72'>
                 <Image
                   alt='hi'
                   className=''
-                  width='150'
-                  height='150'
-                  src={urlFor(main.image).width(300).height(300).url()}
+                  width='300'
+                  height='380'
+                  src={urlFor(main.image).width(300).height(380).url()}
                 />
               </div>
             </div>

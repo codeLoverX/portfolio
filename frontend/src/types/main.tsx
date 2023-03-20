@@ -6,7 +6,7 @@ export interface Main {
       _ref: string
     }
   };
-  bio: Array<unknown>;
+  bio: string;
   about: Array<unknown>;
   frontendStack: string;
   backendStack: string;

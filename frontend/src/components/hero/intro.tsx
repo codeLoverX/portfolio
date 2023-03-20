@@ -21,7 +21,7 @@ import { Main } from '@/types/main';
 export default function Intro({ main }: { main: Main }) {
   console.log({ main });
   return (
-    <div className='my-0 flex min-h-screen w-screen items-center justify-center pt-0 pb-12 lg:pb-0 bg-gradient-to-b from-white via-slate-100 to-white-100'>
+    <div className='my-0 flex min-h-screen w-screen items-center justify-center pt-0 pb-12 lg:pb-0 bg-gradient-to-l from-slate-200 to-white-100'>
       <div className='w-full'>
         <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-10/12 lg:text-start xl:w-7/12'>
           <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>
@@ -49,7 +49,7 @@ export default function Intro({ main }: { main: Main }) {
           </div>
           <div className='order-1 col-span-3 lg:order-2 lg:col-span-1'>
             <div className='avatar pt-12 lg:pt-0 '>
-              <div className='animated-changeShape ring ring-black ring-offset-base-100 ring-offset-2 w-72'>
+              <div className='animated-changeShape ring ring-black ring-offset-base-100 ring-offset-2 w-64'>
                 <Image
                   alt='hi'
                   className=''
@@ -64,9 +64,6 @@ export default function Intro({ main }: { main: Main }) {
         <div className='my-12 lg:my-4'>
           <div className='container mx-auto w-9/12 pt-6 text-center text-lg lg:w-10/12 lg:pt-0 lg:text-start xl:w-7/12'>
             <div className='pt-0 lg:pt-6'>
-              <p className='align-center mx-auto mb-2 hidden w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
-                Frontend
-              </p>
               <p className='align-center mr-0 mb-2 border-r-black pb-2 pr-0 lg:mr-4 lg:inline lg:border-r-2 lg:pr-12'>
                 {main.frontendStack}
                 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -81,9 +78,6 @@ export default function Intro({ main }: { main: Main }) {
               </p>
             </div>
             <div className='pt-0 lg:pt-6'>
-              <p className='align-center mx-auto mb-2 hidden w-3/12 border-b-2 border-b-black border-r-black pb-2 pr-0 md:w-2/12 lg:mr-4 lg:inline lg:border-r-2 lg:border-b-0 lg:pr-4'>
-                Backend
-              </p>
               <p className='align-center mr-0 mb-2 border-r-black pb-2 pr-0 lg:mr-4 lg:inline lg:border-r-2 lg:pr-12'>
                 {main.backendStack}
               </p>

@@ -48,7 +48,7 @@ export default function HomePage({ projects, main, particulars }: HomeProps) {
         <section>
           <Intro main={main} />
           <About main={main} />
-          <Portfolio />
+          <Portfolio projects={projects} />
         </section>
       </main>
     </Layout>

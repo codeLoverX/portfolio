@@ -72,6 +72,12 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'technology',
+      title: 'Technology',
+      type: 'array',
+      of: [{type: 'string'}]
+    }),
+    defineField({
       name: 'order',
       title: 'Order',
       type: 'number',

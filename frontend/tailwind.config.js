@@ -63,4 +63,7 @@ module.exports = {
     prefix: '',
     darkTheme: 'dark',
   },
+  purge: [
+    "./src/**/*.{ts,tsx}"
+  ],
 };

@@ -46,12 +46,12 @@ export default function Intro({ main }: { main: Main }) {
               <FaGithub className='ml-2 inline text-4xl hover:fill-blue-600' onClick={() => window.open(`${main.socials.github}`)} />
             </p>
           </div>
-          <div className='order-1 col-span-3 lg:order-2 lg:col-span-1 lg:text-end'>
+          <div className='order-1 col-span-3 lg:order-2 lg:col-span-1 lg:text-start'>
             <div className='avatar pt-12 lg:pt-0 '>
-              <div className='rounded-[40px] shadow ring-offset w-64 drop-shadow-xl '>
+              <div className='rounded-[100px] shadow ring-offset w-58 lg:w-64 drop-shadow-2xl '>
                 <Image
                   alt='hi'
-                  className=''
+                  className='object-center'
                   width='300'
                   height='380'
                   src={urlFor(main.image).width(300).height(380).url()}
@@ -60,7 +60,7 @@ export default function Intro({ main }: { main: Main }) {
             </div>
           </div>
         </div>
-        <div className='my-12 lg:my-4'>
+        <div className='my-4 lg:my-4'>
           <div className='container w-9/12 pt-6 lg:pt-12 mx-auto text-5xl lg:w-6/12  lg:text-start'>
             <div className='flex align-center justify-center lg:justify-start'>
               <FaCss3Alt className='inline fill-blue-900 hover:fill-blue-600' />

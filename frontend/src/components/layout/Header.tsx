@@ -54,7 +54,7 @@ export default function Header() {
             <NavbarLinks />
           </ul>
         </div>
-        <a className='btn-ghost btn hidden  p-2 text-2xl font-extrabold normal-case lg:block'>
+        <a className='text-transparent bg-clip-text bg-gradient-to-r hidden p-2 text-lg font-extrabold normal-case lg:block from-purple-400 via-indigo-600 to-pink-600'>
           {myName}
         </a>
       </div>
@@ -63,8 +63,8 @@ export default function Header() {
           <NavbarLinks />
         </ul>
       </div>
-      <div className='navbar-end block lg:hidden'>
-        <a className='btn-ghost btn text-2xl font-extrabold normal-case'>
+      <div className='navbar-end block lg:hidden text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-indigo-600 to-pink-600'>
+        <a className='text-lg font-extrabold normal-case'>
           {myName}
         </a>
       </div>

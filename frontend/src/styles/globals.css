@@ -107,22 +107,15 @@
 @layer utilities {
   @keyframes changeShape {
 
-    0%
-   {
-      @apply rounded-[100px];
-    }
-
     50% {
-      @apply rounded-[80px] ;
+      @apply rounded-tr-[40px] rounded-bl-[40px] rounded-tl-[100px] rounded-br-[100px] ;
 
     }
-    100% {
-      @apply rounded-[100px];
-    }
-
+   
   }
 
   .animated-changeShape {
+    @apply rounded-tr-[100px] rounded-bl-[100px] rounded-tl-[40px] rounded-br-[40px];
     animation: changeShape 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 

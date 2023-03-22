@@ -15,6 +15,7 @@ export interface Project {
   _createdAt?: Date;
   _id: string;
   description: Array<unknown>;
+  technology: Array<string>;
 };
 
 

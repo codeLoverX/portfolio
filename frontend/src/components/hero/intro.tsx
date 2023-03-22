@@ -28,7 +28,7 @@ export default function Intro({ main }: { main: Main }) {
             <h1 className='pt-12 t lg:pt-0 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-600 to-yellow-600'>
               {main.name}
             </h1>
-            <div className='inline-block h-32 pt-12 text-lg font-light text-gray-600'>
+            <div className='inline-block h-32 pt-12 text-xl font-light text-gray-600'>
               <Typewriter
                 words={[main.bio]}
                 loop={5}
@@ -37,8 +37,6 @@ export default function Intro({ main }: { main: Main }) {
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
-              // onLoopDone={handleDone}
-              // onType={handleType}
               />
             </div>
             <p className='pt-6 text-4xl hover:text-5xl block'>

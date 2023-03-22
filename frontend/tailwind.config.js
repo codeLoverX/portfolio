@@ -27,28 +27,39 @@ module.exports = {
       },
       keyframes: {
         flicker: {
-          '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
-            opacity: 0.99,
+          '0%,  100%': {
             filter:
-              'drop-shadow(0 0 1px rgba(252, 211, 77)) drop-shadow(0 0 15px rgba(245, 158, 11)) drop-shadow(0 0 1px rgba(252, 211, 77))',
+              'drop-shadow(0 0 4px gray) ',
           },
-          '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': {
-            opacity: 0.4,
+          '65%, 69.999%': {
             filter: 'none',
           },
         },
-        shimmer: {
-          '0%': {
-            backgroundPosition: '-700px 0',
+        slideLeft: {
+          '0%, 100%': {
+            paddingRight: 0,
+            paddingLeft: "40px",
           },
-          '100%': {
-            backgroundPosition: '700px 0',
+          '50%': {
+            paddingLeft: 0,
+            paddingRight: "40px",
+          },
+        },
+        slideRight: {
+          '0%, 100%': {
+            paddingRight: "40px",
+            paddingLeft: 0,
+          },
+          '50%': {
+            paddingLeft: "40px",
+            paddingRight: 0,
           },
         },
       },
       animation: {
-        flicker: 'flicker 3s linear infinite',
-        shimmer: 'shimmer 1.3s linear infinite',
+        flicker: 'flicker 4s linear infinite',
+        slideLeft: 'slideLeft 4s linear infinite',
+        slideRight: 'slideRight 4s linear infinite',
       },
     },
   },

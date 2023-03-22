@@ -28,7 +28,7 @@ export function NavbarLinks() {
 
 export default function Header() {
   return (
-    <div className='border-gray navbar left-0 border-b bg-slate-50 shadow-lg lg:absolute lg:top-0'>
+    <div className='border-gray navbar lg:left-2 border-b bg-slate-50 shadow-lg lg:absolute lg:top-0'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn-ghost btn lg:hidden'>

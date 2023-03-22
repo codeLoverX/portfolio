@@ -10,23 +10,23 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
 
   return (
     <>
-      <div className={clsx('w-full bg-transparent pb-8',
+      <div className={clsx('w-4/6 md:w-full rounded-3xl bg-transparent animate-flicker pb-8 lg:animate-none',
         {
-          "pl-16": isOdd,
-          "pr-16": !isOdd
+          "lg:pl-[40px] pr-0 lg:group-hover:animate-slideLeft": isOdd,
+          "lg:pr-[40px] pl-0 lg:group-hover:animate-slideRight": !isOdd
         }
       )} id='about' key={project._id}>
-        <div className="card lg:card-side text-start mx-auto bg-base-100 shadow-xl">
-          <figure>
+        <div className="text-center h-[500px] lg:h-72 lg:text-start grid grid-cols-1 auto-rows-fr md:grid-cols-2 bg-base-100 shadow-xl group/inside">
+          <figure className="overflow-hidden h-full">
             <Image
-              width={300}
-              height={300}
-              className="object-top"
-              src={urlFor(project.image).width(300).height(380).url()}
+              width={400}
+              height={1000}
+              className="object-top xl:grayscale-[0.6] xl:group-hover/inside:grayscale-0"
+              src={urlFor(project.image).width(1000).url()}
               alt="Album" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{project.title}</h2>
+            <h2 className="">{project.title}</h2>
             <PortableText value={project.description as any} />
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Listen</button>

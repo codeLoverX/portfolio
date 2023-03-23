@@ -38,20 +38,20 @@ module.exports = {
         slideLeft: {
           '0%, 100%': {
             paddingRight: 0,
-            paddingLeft: "40px",
+            paddingLeft: "30px",
           },
           '50%': {
             paddingLeft: 0,
-            paddingRight: "40px",
+            paddingRight: "30px",
           },
         },
         slideRight: {
           '0%, 100%': {
-            paddingRight: "40px",
+            paddingRight: "30px",
             paddingLeft: 0,
           },
           '50%': {
-            paddingLeft: "40px",
+            paddingLeft: "30px",
             paddingRight: 0,
           },
         },

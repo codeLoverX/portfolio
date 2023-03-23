@@ -8,10 +8,10 @@ export default function ButtonAction({ href, text }: { href: string | undefined,
     <>
       <button 
       onClick={()=>window.open(href)}
-      disabled={href == undefined} className={clsx("btn btn-sm btn-primary inline-block py-2 px-2",
+      className={clsx("btn btn-xs btn-primary px-2 w-1/2 mx-auto lg:w-10/12",
         {
           "lg:group-hover:animate-slideLeft": href,
-          "lg:group-hover:animate-slideRight": !href
+          "hidden sm:inline lg:group-hover:animate-slideRight btn-disabled ": !href
         }
       )}>
         <>{text}</>

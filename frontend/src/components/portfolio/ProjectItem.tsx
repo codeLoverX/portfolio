@@ -18,7 +18,7 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
           "lg:pr-[40px] pl-0 lg:group-hover:animate-slideRight": !isOdd
         }
       )} id='about' key={project._id}>
-        <div className="text-center h-[600px] lg:h-72 lg:text-start grid grid-cols-1 auto-rows-fr lg:grid-cols-2 bg-base-100 shadow-xl group/inside">
+        <div className="text-center h-[700px] sm:h-[600px] lg:h-72 lg:text-start grid grid-cols-1 auto-rows-fr lg:grid-cols-2 bg-base-100 shadow-xl group/inside">
           <figure className="overflow-hidden h-full">
             <Image
               width={400}

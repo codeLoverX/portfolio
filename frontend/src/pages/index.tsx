@@ -1,20 +1,17 @@
 import { GetStaticProps } from 'next'
 import { groq } from 'next-sanity'
 
+import Contact from '@/components/contact-form';
 import About from '@/components/hero/about';
 import Intro from '@/components/hero/intro';
 import Layout from '@/components/layout/Layout';
+import Particulars from '@/components/particulars';
 import Portfolio from '@/components/portfolio';
-// import ArrowLink from '@/components/links/ArrowLink';
-// import ButtonLink from '@/components/links/ButtonLink';
-// import UnderlineLink from '@/components/links/UnderlineLink';
-// import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 import { client } from '@/client/client';
 
 import { Main } from '@/types/main';
-import { Particular } from '@/types/particular';
 import { Project } from '@/types/project';
 
 /**
@@ -33,7 +30,6 @@ interface HomeProps {
 };
 
 export default function HomePage({ projects, main, particulars }: HomeProps) {
-  console.log({ projects, main, particulars });
   return (
     <Layout>
       <Seo templateTitle='Home' />
@@ -49,6 +45,9 @@ export default function HomePage({ projects, main, particulars }: HomeProps) {
           <Intro main={main} />
           <About main={main} />
           <Portfolio projects={projects} />
+          <Particulars particulars={particulars} />
+          <Contact />
+
         </section>
       </main>
     </Layout>

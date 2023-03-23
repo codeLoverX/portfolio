@@ -21,9 +21,9 @@ export default function Particulars({ particulars }: { particulars: Particular[]
               {value.title}
             </div>
             <div className="collapse-content">
-              <p>
+              <div>
                 <PortableText value={value.description as any} />
-              </p>
+              </div>
             </div>
           </div>
         ))}

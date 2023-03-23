@@ -39,11 +39,14 @@ export default function Contact() {
               onSubmit={(event: FormEvent<HTMLFormElement>) => handleSubmit(event)}
             >
               <input type="hidden" name="form-name" value="contact-form" />
-              <p hidden>
+              <div hidden>
                 <label>
                   Don’t fill this out: <input name="bot-field" />
                 </label>
-              </p>
+              </div>
+              <input type="hidden" name="subject"
+                value="Notification from ridwanbinmonjur.netlify.app" />
+              <p></p>
               <div className="w-full">
                 <input id="name" type="text" name="name" required placeholder="Enter your name..." className="input input-bordered inline w-full lg:w-[50%] mb-2" />
                 <input id="email" type="email" name="email" required placeholder="Enter your email..." className="input input-bordered inline w-full lg:w-[50%] mb-2" />

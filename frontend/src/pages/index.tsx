@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import { groq } from 'next-sanity'
 
-import Contact from '@/components/contact-form';
+import Contact from '@/components/contact';
 import About from '@/components/hero/about';
 import Intro from '@/components/hero/intro';
 import Layout from '@/components/layout/Layout';

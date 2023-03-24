@@ -16,7 +16,7 @@ export default function Particulars({ particulars }: { particulars: Particular[]
           Please check out the relevant work experience, skills and education level.
         </p>
         {particulars.map((value, index) => (
-          <div key={value._id} tabIndex={index} className="collapse text-gray-600 w-full collapse-plus border border-base-300 bg-base-100 dak:bg-white rounded-box">
+          <div key={value._id} tabIndex={index} className="collapse text-gray-600 w-full collapse-plus border border-base-300 bg-base-100 dark:bg-white rounded-box">
             <div className="collapse-title">
               <span className='text-lg'> {value.title} </span>
             </div>

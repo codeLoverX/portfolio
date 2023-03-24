@@ -38,16 +38,16 @@ module.exports = {
         slideLeft: {
           '0%, 100%': {
             paddingRight: 0,
-            paddingLeft: "30px",
+            paddingLeft: "40px",
           },
           '50%': {
             paddingLeft: 0,
-            paddingRight: "30px",
+            paddingRight: "40px",
           },
         },
         slideRight: {
           '0%, 100%': {
-            paddingRight: "30px",
+            paddingRight: "40px",
             paddingLeft: 0,
           },
           '50%': {
@@ -55,11 +55,20 @@ module.exports = {
             paddingRight: 0,
           },
         },
+        movePictureDown: {
+          '0%': {
+            transform: "translateY(0%)",
+          },
+          '50%': {
+            transform: "translateY(-80%)",
+          },
+        }
       },
       animation: {
         flicker: 'flicker 4s linear infinite',
         slideLeft: 'slideLeft 4s linear infinite',
         slideRight: 'slideRight 4s linear infinite',
+        movePictureDown: 'movePictureDown 8s ease-in infinite'
       },
     },
   },

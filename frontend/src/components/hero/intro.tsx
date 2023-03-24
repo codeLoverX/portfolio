@@ -21,14 +21,14 @@ import { Main } from '@/types/main';
 export default function Intro({ main }: { main: Main }) {
   console.log({ main });
   return (
-    <div className='my-0 flex min-h-screen w-screen items-center justify-center pt-0 pb-12 lg:pb-0 bg-gradient-to-l from-gray-200 to-white-100'>
+    <div className='my-0 flex lg:min-h-screen w-screen items-center justify-center py-12 lg:py-24 bg-gradient-to-l from-gray-200 to-white-100'>
       <div className='w-full'>
-        <div className='container mx-auto grid w-9/12 grid-cols-2 text-center xl:w-6/12 lg:text-start'>
+        <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-7/12 lg:text-start'>
           <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>
             <h1 className='pt-12 t lg:pt-0 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-600 to-yellow-600'>
               {main.name}
             </h1>
-            <div className='inline-block h-32 pt-12 text-xl font-light text-gray-600'>
+            <div className='inline-block h-32 pt-12 text-lg md:text-xl text-gray-600'>
               <Typewriter
                 words={[main.bio]}
                 loop={5}
@@ -39,13 +39,13 @@ export default function Intro({ main }: { main: Main }) {
                 delaySpeed={1000}
               />
             </div>
-            <p className='pt-6 text-4xl hover:text-5xl block'>
+            <p className='pt-6 text-4xl xl:hover:text-5xl block'>
               <FaLinkedin className='inline hover:fill-blue-600' onClick={() => window.open(`${main.socials.linkedin}`)} />
               <FaGithub className='ml-2 inline hover:fill-blue-600' onClick={() => window.open(`${main.socials.github}`)} />
             </p>
           </div>
           <div className='order-1 col-span-3 lg:order-2 lg:col-span-1 lg:text-start'>
-            <div className='avatar pt-12 lg:pt-0 '>
+            <div className='avatar pt-0 '>
               <div className='rounded-[100px] shadow ring-offset w-58 lg:w-64 drop-shadow-2xl '>
                 <Image
                   alt='hi'
@@ -58,20 +58,18 @@ export default function Intro({ main }: { main: Main }) {
             </div>
           </div>
         </div>
-        <div className='my-4 lg:my-4'>
-          <div className='container w-9/12 pt-6 lg:pt-12 mx-auto  text-4xl hover:text-5xl lg:w-6/12  lg:text-start'>
-            <div className='flex align-center justify-center lg:justify-start'>
-              <FaCss3Alt className='  inline fill-blue-900 hover:fill-blue-600' />
-              <FaSass className='ml-2  inline fill-pink-600 hover:fill-blue-600' />
-              <FaReact className='ml-2  inline fill-blue-900 hover:fill-blue-600' />
-              <SiTypescript className='ml-2  inline fill-blue-800 hover:fill-blue-600' />
-              <SiNextdotjs className='fill:black-900 ml-2 inline  hover:fill-blue-600' />
-              <SiGraphql className='ml-2 inline fill-pink-600  hover:fill-blue-600' />
-              <FaNodeJs className='ml-2 inline fill-green-600  hover:fill-blue-600' />
-              <FaLaravel className='ml-2 inline fill-red-600  hover:fill-blue-600' />
-              <FaPhp className='ml-2 inline fill-purple-700  hover:fill-blue-600' />
-              <SiNestjs className='ml-2 inline fill-red-700  hover:fill-blue-600' />
-            </div>
+        <div className='container mx-auto w-9/12 lg:w-7/12 mt-12'>
+          <div className='flex align-center justify-center lg:justify-start flex-wrap gap-y-4 text-4xl xl:hover:text-5xl '>
+            <FaCss3Alt className='  inline fill-blue-900 hover:fill-blue-600' />
+            <FaSass className='ml-2  inline fill-pink-600 hover:fill-blue-600' />
+            <FaReact className='ml-2  inline fill-blue-900 hover:fill-blue-600' />
+            <SiTypescript className='ml-2  inline fill-blue-800 hover:fill-blue-600' />
+            <SiNextdotjs className='fill:black-900 ml-2 inline  hover:fill-blue-600' />
+            <SiGraphql className='ml-2 inline fill-pink-600  hover:fill-blue-600' />
+            <FaNodeJs className='ml-2 inline fill-green-600  hover:fill-blue-600' />
+            <FaLaravel className='ml-2 inline fill-red-600  hover:fill-blue-600' />
+            <FaPhp className='ml-2 inline fill-purple-700  hover:fill-blue-600' />
+            <SiNestjs className='ml-2 inline fill-red-700  hover:fill-blue-600' />
           </div>
         </div>
       </div>

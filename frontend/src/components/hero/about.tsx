@@ -10,11 +10,11 @@ import { Main } from '@/types/main';
 
 export default function About({ main }: { main: Main }) {
   return (
-    <div className='w-full bg-gradient-to-r from-gray-100 to-white-100 group py-16' id='about'>
-      <div className='container mx-auto w-9/12 grid-cols-2  justify-center 2xl:flex lg:w-6/12 2xl:w-7/12'>
-        <div className='text-center lg:mr-12 '>
-          <div className='avatar lg:pt-0 w-64 lg:w-96 px-0'>
-            <div className='rounded-3xl relative w-full md:w-7/8 lg:w-3/4 2xl:w-full z-20 mx-auto'>
+    <div className='w-full bg-gradient-to-r from-gray-100 to-white-100 group py-12 lg:py-24' id='about'>
+      <div className='container mx-auto w-9/12 justify-center 2xl:flex lg:w-6/12'>
+        <div className='text-center lg:mr-8 '>
+          <div className='avatar lg:pt-0 w-72 xl:w-96 px-0'>
+            <div className='rounded-3xl relative w-full z-20 mx-auto'>
               <Image
                 alt='hi'
                 className='z-20'
@@ -43,16 +43,15 @@ export default function About({ main }: { main: Main }) {
         </div>
         <div className='mt-8 flex flex-col justify-center align-center text-justify lg:mt-0 '>
           <h5 className='font-bold uppercase text-transparent text-xl text-extrabold bg-clip-text bg-gradient-to-r
-           text-center 2xl:text-justify from-blue-400 via-purple-600 to-pink-600 pt-4'>
+           text-center xl:text-start from-blue-400 via-purple-600 to-pink-600 pt-4'>
             <MdOutlineWavingHand className='text-4xl inline fill-[url(#blue-gradient)] animate-bounce -ml-4 mr-2 t' />
             About me
           </h5>
-          <p className='pt-4 text-2xl font-bold'>
-            
+          <p className='pt-4 text-lg md:text-xl font-bold'>
             A dedicated software developer based in Dhaka, Bangladesh.
             <br />
           </p>
-          <div className='pt-6 text-lg font-light text-gray-600 '>
+          <div className='pt-6 text-lg text-gray-600'>
             <PortableText value={main.about as any} />
           </div>
         </div>

@@ -6,7 +6,7 @@ import { Particular } from '@/types/particular';
 export default function Particulars({ particulars }: { particulars: Particular[] }) {
 
   return (
-    <div className='w-full  bg-gradient-to-r from-gray-100 to-white-100 py-12 lg:py-24' id='particulars'>
+    <div className='w-full  bg-gradient-to-r bg-white from-gray-100 to-white-100 py-12 lg:py-24' id='particulars'>
       <div className='container mx-auto w-9/12 lg:w-6/12'>
         <h5 className='font-bold uppercase text-transparent text-xl text-extrabold bg-clip-text bg-gradient-to-r from-blue-400 via-purple-600 to-pink-600'>
           <FaFileContract className='fill-[url(#blue-gradient)] mr-2 inline text-4xl animate-bounce ' />

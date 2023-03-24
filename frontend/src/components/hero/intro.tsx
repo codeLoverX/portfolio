@@ -21,7 +21,7 @@ import { Main } from '@/types/main';
 export default function Intro({ main }: { main: Main }) {
   console.log({ main });
   return (
-    <div className='my-0 flex lg:min-h-screen w-screen items-center justify-center py-12 lg:py-24 bg-gradient-to-l from-gray-200 to-white-100'>
+    <div className='my-0 flex lg:min-h-screen w-screen items-center justify-center py-12 lg:py-24 bg-gradient-to-l dark:bg-gray-50 from-gray-200 to-white-100'>
       <div className='w-full'>
         <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-7/12 lg:text-start'>
           <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>

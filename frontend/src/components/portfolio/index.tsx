@@ -9,7 +9,7 @@ export default function Portfolio({ projects }: { projects: Project[] }) {
 
 
   return (
-    <div className='w-full bg-gradient-to-l from-gray-200 to-white-100 py-12 lg:py-24' id='portfolio'>
+    <div className='w-full bg-gradient-to-l dark:bg-gray-50 from-gray-200 to-white-100 py-12 lg:py-24' id='portfolio'>
       <div className='container mx-auto w-9/12 justify-start xl:flex xl:w-6/12'>
         <div className='flex flex-col justify-center text-start lg:mt-0'>
           <h5 className='font-bold uppercase text-transparent text-xl text-extrabold bg-clip-text bg-gradient-to-r from-blue-400 via-purple-600 to-pink-600'>

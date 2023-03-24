@@ -10,7 +10,7 @@ import { Main } from '@/types/main';
 
 export default function About({ main }: { main: Main }) {
   return (
-    <div className='w-full bg-gradient-to-r from-gray-100 to-white-100 group py-12 lg:py-24' id='about'>
+    <div className='w-full bg-gradient-to-r dark:bg-white from-gray-100 to-white-100 group py-12 lg:py-24' id='about'>
       <div className='container mx-auto w-9/12 justify-center 2xl:flex lg:w-6/12'>
         <div className='text-center lg:mr-8 '>
           <div className='avatar lg:pt-0 w-72 xl:w-96 px-0'>

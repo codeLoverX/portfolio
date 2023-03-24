@@ -3,11 +3,10 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'ridwan.dev',
   siteName: 'ridwan.dev',
   description:
     'A personal portfolio',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://ridwanbinmonjur.netlify.app/',
   type: 'website',
   robots: 'follow, index',
@@ -15,7 +14,7 @@ const defaultMeta = {
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
+  image: '/images/website-icon.png',
 };
 
 type SeoProps = {
@@ -75,7 +74,7 @@ export default function Seo(props: SeoProps) {
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Ridwan Bin Monjur'
           />
         </>
       )}
@@ -97,7 +96,7 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'apple-touch-icon',
     sizes: '180x180',
-    href: '/favicon/apple-touch-icon.png',
+    href: '/favicon/apple-icon.png',
   },
   {
     rel: 'icon',
@@ -114,8 +113,8 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   { rel: 'manifest', href: '/favicon/site.webmanifest' },
   {
     rel: 'mask-icon',
-    href: '/favicon/safari-pinned-tab.svg',
-    color: '#00e887',
+    href: '/favicon/apple-icon-180x180.png',
+    color: 'gray',
   },
-  { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
+  { rel: 'shortcut icon', href: '/favicon/favicon-96x96.ico' },
 ];

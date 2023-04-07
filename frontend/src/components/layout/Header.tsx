@@ -23,6 +23,9 @@ export function NavbarLinks() {
       <li>
         <a href={links[3].href}>{links[3].label}</a>
       </li>
+      <li>
+        <a href={links[4].href}>{links[4].label}</a>
+      </li>
     </>
   );
 }

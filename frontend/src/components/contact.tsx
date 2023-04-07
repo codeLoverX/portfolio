@@ -22,7 +22,7 @@ export default function Contact() {
       });
   };
   return (
-    <div className='bg-gradient-to-l dark:bg-gray-50 from-gray-200 to-white-100 py-12 lg:py-24'>
+    <div className='bg-gradient-to-l dark:bg-gray-50 from-gray-200 to-white-100 py-12 lg:py-24' id='contact'>
       <div className='container mx-auto w-9/12 columns-1 text-center lg:w-6/12'>
         <h5 className='text-start font-bold uppercase text-transparent text-xl text-extrabold bg-clip-text bg-gradient-to-r mb-8 from-blue-400 via-purple-600 to-pink-600'>
           <FaWpforms className='fill-[url(#blue-gradient)] mr-2 inline text-4xl animate-bounce ' />

@@ -45,7 +45,7 @@ export default function HomePage({ projects, main, particulars }: HomeProps) {
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const [projects, main, particulars] = await Promise.all([
-    client.fetch(groq`*[_type == "portfolio"] | order(_order asc)`),
+    client.fetch(groq`*[_type == "portfolio"] | order(order asc)`),
     client.fetch(groq`*[_type == "main"]`),
     client.fetch(groq`*[_type == "particulars"]`),
   ]);

@@ -18,7 +18,7 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
           "lg:pr-[40px] pl-0 lg:group-hover:animate-slideRight": !isOdd
         }
       )} id='about' key={project._id}>
-        <div className="text-center relative h-[550px] md:h-[450px] lg:h-[350px] lg:text-start grid grid-cols-1 gap-0 p-0 auto-rows-fr lg:grid-cols-2 bg-base-100 dark:bg-white shadow-xl group/inside">
+        <div className="text-center relative h-[600px] md:h-[450px] lg:h-[350px] lg:text-start grid grid-cols-1 gap-0 p-0 auto-rows-fr lg:grid-cols-2 bg-base-100 dark:bg-white shadow-xl group/inside">
           <figure className="overflow-hidden w-full">
             <Image
               width={400}
@@ -40,10 +40,9 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
                   })
                 }
               </div>
-              <div className="grid grid-cols-3 justify-center w-full mt-2 mb-6">
+              <div className="grid grid-cols-2 justify-center w-full mt-2 mb-6">
                 <ButtonAction href={project.github} text="Github" />
                 <ButtonAction href={project.liveDemo} text="Live" />
-                <ButtonAction href={project.backendDemo} text="Backend" />
               </div>
             </div>
           </div>

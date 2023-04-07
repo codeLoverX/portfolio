@@ -66,8 +66,8 @@ module.exports = {
       },
       animation: {
         flicker: 'flicker 4s linear infinite',
-        slideLeft: 'slideLeft 4s linear infinite',
-        slideRight: 'slideRight 4s linear infinite',
+        slideLeft: 'slideLeft 3s linear infinite',
+        slideRight: 'slideRight 3s linear infinite',
         movePictureDown: 'movePictureDown 8s ease-in infinite'
       },
     },

@@ -9,7 +9,7 @@ export default function ButtonAction({ href, text }: { href: string | undefined,
       className={clsx("btn btn-sm btn-primary md:no-underline w-10/12",
         {
           "": href,
-          "invisible lg:visible lg:btn-disabled ": !href
+          "btn-disabled ": !href
         }
       )}>
         <>{text}</>

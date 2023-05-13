@@ -28,7 +28,7 @@ export default function Contact() {
           <FaWpforms className='fill-[url(#blue-gradient)] mr-2 inline text-4xl animate-bounce ' />
           Contact Me
         </h5>
-        <div className="text-lg">
+        <div className="text-base text-base lg:text-lg">
         {
           !isSubmit ?
             (<form
@@ -49,10 +49,10 @@ export default function Contact() {
                 value="Notification from ridwanbinmonjur.netlify.app" />
               <p></p>
               <div className="w-full">
-                <input id="name" type="text" name="name" required placeholder="Enter your name..." className="input input-bordered dark:bg-white inline w-full lg:w-[50%] mb-2 text-lg" />
-                <input id="email" type="email" name="email" required placeholder="Enter your email..." className="input input-bordered dark:bg-white text-lg inline w-full lg:w-[50%] mb-2" />
+                <input id="name" type="text" name="name" required placeholder="Enter your name..." className="input input-bordered dark:bg-white inline w-full lg:w-[50%] mb-2 text-base lg:text-lg" />
+                <input id="email" type="email" name="email" required placeholder="Enter your email..." className="input input-bordered dark:bg-white text-base lg:text-lg inline w-full lg:w-[50%] mb-2" />
               </div>
-              <textarea id="message" name="message" required title="Enter your message please" placeholder="Enter your text please..." className="textarea textarea-bordered dark:bg-white w-full text-lg" rows={4}></textarea>
+              <textarea id="message" name="message" required title="Enter your message please" placeholder="Enter your text please..." className="textarea textarea-bordered dark:bg-white w-full text-base lg:text-lg" rows={4}></textarea>
               <button className="btn btn-primary mt-4" type="submit">Submit</button>
             </form>) :
             (<div>

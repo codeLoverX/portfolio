@@ -12,16 +12,16 @@ export default function Particulars({ particulars }: { particulars: Particular[]
           <FaFileContract className='fill-[url(#blue-gradient)] mr-2 inline text-4xl animate-bounce ' />
           Particulars
         </h5>
-        <p className='pt-4 text-lg md:text-xl font-bold mb-6 '>
+        <p className='pt-4 text-lg lg:text-xl font-bold mb-6 '>
           Please check out the relevant work experience, skills and education level.
         </p>
         {particulars.map((value, index) => (
           <div key={value._id} tabIndex={index} className="collapse text-gray-600 w-full collapse-plus border border-base-300 bg-base-100 dark:bg-white rounded-box">
             <div className="collapse-title">
-              <span className='text-lg'> {value.title} </span>
+              <span className='text-base lg:text-lg'> {value.title} </span>
             </div>
             <div className="collapse-content">
-              <div className='text-lg'>
+              <div className='text-base lg:text-lg'>
                 <PortableText value={value.description as any} />
               </div>
             </div>

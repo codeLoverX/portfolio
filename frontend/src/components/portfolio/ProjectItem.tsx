@@ -18,7 +18,7 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
           "lg:pr-[40px] pl-0 lg:group-hover:animate-slideRight": !isOdd
         }
       )} id='about' key={project._id}>
-        <div className="text-center relative h-[600px] md:h-[450px] lg:h-[350px] lg:text-start grid grid-cols-1 gap-0 p-0 auto-rows-fr lg:grid-cols-2 bg-base-100 dark:bg-white shadow-xl group/inside">
+        <div className="text-center relative h-[500px] md:h-[450px] lg:h-[350px] lg:text-start grid grid-cols-1 gap-0 p-0 auto-rows-fr lg:grid-cols-2 bg-base-100 dark:bg-white shadow-xl group/inside">
           <figure className="overflow-hidden w-full">
             <Image
               width={400}
@@ -28,11 +28,11 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
               alt="Album" />
           </figure>
           <div className="px-4 py-4 text-lg ">
-            <h2 className="text-start pb-4 text-xl">{project.title}</h2>
-            <div className="text-justify text-gray-600">
+            <h2 className="text-start pb-4 text-lg lg:text-xl">{project.title}</h2>
+            <div className="text-justify text-gray-600 text-base lg:text-lg">
               <PortableText value={project.description as any} />
             </div>
-            <div className="absolute bottom-0 py-2 w-[90%] lg:w-[40%]">
+            <div className="absolute bottom-0 py-2 w-[90%] text-base lg:text-lg lg:w-[40%]">
               <div className="hidden lg:flex flex-wrap pb-2">
                 {
                   project.technology.map((value, index) => {
@@ -40,8 +40,8 @@ export default function ProjectItem({ project, isOdd }: { project: Project, isOd
                   })
                 }
               </div>
-              <div className="grid grid-cols-2 justify-center w-full mt-2 mb-6">
-                <ButtonAction href={project.github} text="Github" />
+              <div className="justify-center px-12 md:px-24 lg:px-12 py-2 mt-2 mb-6">
+                {/* <ButtonAction href={project.github} text="Github" /> */}
                 <ButtonAction href={project.liveDemo} text="Live" />
               </div>
             </div>

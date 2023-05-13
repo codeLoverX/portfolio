@@ -51,7 +51,7 @@ export default function About({ main }: { main: Main }) {
             A dedicated software developer based in Dhaka, Bangladesh.
             <br />
           </p>
-          <div className='pt-6 text-lg text-gray-600'>
+          <div className='pt-6 text-base lg:text-lg text-gray-600'>
             <PortableText value={main.about as any} />
           </div>
         </div>

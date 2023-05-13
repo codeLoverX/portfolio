@@ -25,10 +25,10 @@ export default function Intro({ main }: { main: Main }) {
       <div className='w-full'>
         <div className='container mx-auto grid w-9/12 grid-cols-2 text-center lg:w-7/12 lg:text-start'>
           <div className='order-2 col-span-2 lg:order-1 lg:col-span-1 lg:pr-12'>
-            <h1 className='pt-12 t lg:pt-0 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-600 to-yellow-600'>
+            <h1 className='pt-12 t lg:pt-0 font-extrabold text-transparent text-3xl lg:text-4xl bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-600 to-yellow-600'>
               {main.name}
             </h1>
-            <div className='inline-block h-32 pt-12 text-lg md:text-xl text-gray-600'>
+            <div className='inline-block h-32 pt-12 text-base lg:text-xl text-gray-600'>
               <Typewriter
                 words={[main.bio]}
                 loop={5}
